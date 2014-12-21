@@ -2,7 +2,6 @@
 #include <X11/keysym.h>
 #include <stdlib.h>
 #include <math.h>
-#define j for(q=-7;q++<6;)for(U=-6;U++<6;)T(O=40*(q+X/40)-X,o=40*(U+Y/40)-Y,M[q+X/40][U+Y/40]),T(O,o,i[q+X/40][U+Y/40]);T(-20,-20,313584)
 Display*D;Window W;GC G;
 unsigned long long m[]={2308166844797954049ll,0,139637976694332ll,4330211041716731904ll,4934957821585882425ll,4900036247746772992ll,4148347024831007737ll,0,18413247602285412130llu,0,579301929194686728ll,1158610868772147200ll,4330275209514407188ll,0,4485059929165405184ll,4629801848432238592ll,9295721005785908223llu,25996854476668928ll,1125900443844608ll,18154568510483267071llu,12286243098633068031llu,22078816256000ll};
 int C[]={8947967,255,4521796,56576,16245355,16776960,5057287,7697781,0,1591837,6052956,16721627,15436081},
@@ -15,6 +14,6 @@ for(q=0;q<999;q++)for(U=0;U<999;U++)I=q*q-1024*q+4*U*U-4096*U+1155220,M[q][U]=I>
 for(q=361;q++<887;)U=(q-512)*(q-1312)/999+sin(q/9.0)*9,M[q][363-U]=M[q][364-U]=M[q][365-U]=q%30?2:L[3];
 for(s=S,U=0;U<32;++U)for(q=0;q<32;++q,s+=2)M[q+882][U+512]=L[*s/5%3*3+*(s+1)/5%3];
 i[901][538]=i[694][465]=i[632][589]=i[450][313]=1084683;i[891][531]=1346840;
-D=XOpenDisplay(0);XSelectInput(D,W=XCreateSimpleWindow(D,RootWindow(D,0),0,0,400,365,0,0,0),KeyPressMask);XMapWindow(D,W);G=XCreateGC(D,W,0,0);j;XEvent E;for(;;XNextEvent(D,&E))
+D=XOpenDisplay(0);XSelectInput(D,W=XCreateSimpleWindow(D,RootWindow(D,0),0,0,400,365,0,0,0),KeyPressMask);XMapWindow(D,W);G=XCreateGC(D,W,0,0);XEvent E;for(;;XNextEvent(D,&E))
 if(E.type==KeyPress){I=XLookupKeysym(&E.xkey,0);q=(I==r)-(I==l);U=(I==d)-(I==u);X+=q*20;Y+=U*20;if(M[X/40][Y/40]*M[X/40-!(X%40)][Y/40]*M[X/40][Y/40-!(Y%40)]*M[X/40-!(X%40)][Y/40-!(Y%40)]%2==0)X-=q*20,Y-=U*20;if(i[X/40][Y/40]&1)i[F+++897][524]=1084682,i[X/40][Y/40]=272,X=35960,Y=21040;
-j;}}
+for(q=-7;q++<6;)for(U=-6;U++<6;)T(O=40*(q+X/40)-X,o=40*(U+Y/40)-Y,M[q+X/40][U+Y/40]),T(O,o,i[q+X/40][U+Y/40]);T(-20,-20,313584);}}
